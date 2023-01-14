@@ -7,5 +7,5 @@ import (
 )
 func main() {
 	fmt.Println(morestrings.ReverseRunes("Hello, world."))
-	println("printint from remote imported bar package=",bar.Hello())
+	println("print from remote imported bar package=",bar.Hello())
 }
