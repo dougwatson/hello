@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 	"github.com/dougwatson/hello/morestrings"
-	"github.com/dougwatson/bar"
+	"github.com/dougwatson/xbar"
 )
 func main() {
 	word:="Hello,World"
@@ -12,5 +12,5 @@ func main() {
 		word=os.Args[1]
 	}
 	fmt.Println(morestrings.ReverseRunes(word))
-	println("import pkg:",bar.Hello())
+	println("import pkg:",xbar.Hello())
 }
