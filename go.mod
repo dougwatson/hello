@@ -1,4 +1,4 @@
-module github.com/dougwatson/hello
+module github.com/dougwatson/xhello
 
 go 1.19
 
