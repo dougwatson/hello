@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"github.com/dougwatson/hello/morestrings"
+	"github.com/dougwatson/xhello/morestrings"
 	"github.com/dougwatson/xbar"
 )
 func main() {
