@@ -6,8 +6,6 @@ import (
 
 	"github.com/dougwatson/xbar"
 	"github.com/dougwatson/xhello/morestrings"
-
-	"github.com/gocoderpro/easyfs"
 )
 
 func main() {
@@ -19,8 +17,8 @@ func main() {
 	println("import pkg:", xbar.Hello())
 	/************************************/
 
-	fs := easyfs.NewFS()
-	_, err := fs.ReadFile("home/src/github.com/dougwatson/xhello/go.mod")
+	filesystem := fs.val
+	_, err := filesystem.ReadFile("home/src/github.com/dougwatson/xhello/go.mod")
 	if err != nil {
 		println("error: " + err.Error())
 	}
