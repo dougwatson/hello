@@ -21,9 +21,9 @@ func main() {
 	println("import pkg:", xbar.Hello())
 	/************************************/
 
-	_, err := fs.ReadFile("home/src/github.com/dougwatson/xhello/go.mod")
+	b, err := fs.ReadFile("home/src/github.com/dougwatson/xhello/go.mod")
 	if err != nil {
 		println("error: " + err.Error())
 	}
-	//println("b=", string(b))
+	println("b=", string(b))
 }
