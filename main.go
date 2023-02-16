@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	_ "fs/fs" // This import is required for the filesystem to be available
 	"os"
 
 	"github.com/dougwatson/xbar"
