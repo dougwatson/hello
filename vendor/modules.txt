@@ -1,3 +1,6 @@
 # github.com/dougwatson/xbar v0.0.1
 ## explicit
 github.com/dougwatson/xbar
+# github.com/gocoderpro/easyfs v0.0.4
+## explicit; go 1.19
+github.com/gocoderpro/easyfs
