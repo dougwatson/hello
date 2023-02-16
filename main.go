@@ -2,14 +2,17 @@ package main
 
 import (
 	"fmt"
-	_ "fs/fs" // This import is required for the filesystem to be available
+	. "fs/fs" // This import is required to use the easyFS filesystem
 	"os"
 
 	"github.com/dougwatson/xbar"
 	"github.com/dougwatson/xhello/morestrings"
 )
 
+var fs = easyFS
+
 func main() {
+
 	word := "Hello,World"
 	if len(os.Args) > 1 {
 		word = os.Args[1]
@@ -18,8 +21,7 @@ func main() {
 	println("import pkg:", xbar.Hello())
 	/************************************/
 
-	filesystem := fs.val
-	_, err := filesystem.ReadFile("home/src/github.com/dougwatson/xhello/go.mod")
+	_, err := fs.ReadFile("home/src/github.com/dougwatson/xhello/go.mod")
 	if err != nil {
 		println("error: " + err.Error())
 	}
