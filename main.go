@@ -7,12 +7,14 @@ import (
 
 	"github.com/dougwatson/xbar"
 	"github.com/dougwatson/xhello/morestrings"
+	"github.com/mattn/go-runewidth"
 )
 
 var fs = easyFS
 
 func main() {
-
+	x := runewidth.StringWidth("つのだ☆HIRO")
+	fmt.Printf("x=%v\n", x)
 	word := "Hello,World"
 	if len(os.Args) > 1 {
 		word = os.Args[1]
